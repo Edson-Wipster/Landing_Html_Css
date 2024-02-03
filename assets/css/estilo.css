@@ -31,6 +31,19 @@ body{
     font-size: 1.125em;
     color: #fff2e7;
 }
+nav a::after{
+    content: " ";
+    width: 0%;
+    height: 4px;
+    background-color: #ecd6c4;
+    position: absolute;
+    bottom: -7px;
+    left: 0;
+    transition: .5s ease-in-out;
+}
+nav a:hover::after{
+    width: 100%;
+}
 .conteudoPri{
     border-top: 0.4px solid #fff2e7;
     margin-bottom: 30px;

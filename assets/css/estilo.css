@@ -1,0 +1,102 @@
+/*Reset CSS*/
+*{
+    margin: 0;
+    padding: 0;
+    position: relative;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+    background: linear-gradient(60.15deg, #2f2325 16.62%,#8e5d52 85.61%);
+    color: #fff2e7;
+    font-size: 100%;
+}
+.cabeca{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 25px 0;
+}
+.cabeca img{
+    height: 72 px;
+}
+.cabeca nav{
+    display: flex;
+    gap: 30px;
+}
+.cabeca nav a{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 1.125em;
+    color: #fff2e7;
+}
+.conteudoPri{
+    border-top: 0.4px solid #fff2e7;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.conteudoPri article{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+.conteudoPri h1{
+    font-family: cursive;
+    font-size: 4.5em;
+}
+.conteudoPri p{
+    font-family: sans-serif;
+    font-size: 1.5em;
+    font-weight: 400;
+    color: #ecd6c4;
+}
+.conteudoPri button{
+    background-color: #ecd6c4;
+    border: none;
+    width: 180px;
+    height: 70px;
+    border-radius: 10px;
+    box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
+}
+.conteudoPri button:hover{
+    background-color: #a48f7d;
+    cursor: pointer;
+    transform: scale(.9);
+}
+.conteudoPri img{
+    height: 430px;
+}
+.conteudoPri img:hover{
+    transform: translate(-5px,-10px);
+}
+.conteudoSec{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+.conteudoSec h2{
+    border-top: 0.4px solid #fff2e7;
+    padding-top: 30px;
+    font-family: cursive;
+    font-weight: 400;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+.conteudoSec p{
+    font-family: sans-serif;
+    font-size: 1,125em;
+}
+footer{
+    border-top: 0.4px solid #fff2e7;
+    padding: 30px
+}
+footer img{
+    height: 49px;
+    display: block;
+    margin: 0 auto;
+}

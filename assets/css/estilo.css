@@ -7,16 +7,34 @@
     text-decoration: none;
 }
 body{
-    background: linear-gradient(60.15deg, #2f2325 16.62%,#8e5d52 85.61%);
+    background: linear-gradient(60.15deg, #694a4f,#8e5d52, #4d393c,#8e5d52);
+    background-size: 900% 200%;
+    height: 90vh;
     color: #fff2e7;
-    font-size: 100%;
+    font-size: 62.5%;
+    max-width: 1200px;
+    display: block;
+    margin: 0 auto;
+    animation: animete 20s linear infinite;
+}
+@keyframes animete{
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 0%;
+    }
+    0%{
+        background-position: 0% 50%;
+    }
 }
 .cabeca{
     display: flex;
-    flex-direction: row;
     align-items: center;
-    justify-content: space-around;
-    padding: 25px 0;
+    justify-content: space-between;
+    padding: 25px 30px;
+    font-size: 1.0rem;
+    text-align: center;
 }
 .cabeca img{
     height: 72 px;
@@ -48,8 +66,11 @@ nav a:hover::after{
     border-top: 0.4px solid #fff2e7;
     margin-bottom: 30px;
     display: flex;
+    flex-flow: row nowrap;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding: 25px 30px;
+    margin: 0 10px;
 }
 .conteudoPri article{
     display: flex;
@@ -69,7 +90,7 @@ nav a:hover::after{
 .conteudoPri button{
     background-color: #ecd6c4;
     border: none;
-    width: 180px;
+    width: 70%;
     height: 70px;
     border-radius: 10px;
     box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
@@ -81,7 +102,8 @@ nav a:hover::after{
     transform: scale(.9);
 }
 .conteudoPri img{
-    height: 430px;
+    width: 100%;
+    height: 50%;
 }
 .conteudoPri img:hover{
     transform: translate(-5px,-10px);
@@ -98,12 +120,12 @@ nav a:hover::after{
     padding-top: 30px;
     font-family: cursive;
     font-weight: 400;
-    font-size: 1.5em;
+    font-size: 1.2rem;
     margin-bottom: 20px;
 }
 .conteudoSec p{
     font-family: sans-serif;
-    font-size: 1,125em;
+    font-size: .8rem;
 }
 footer{
     border-top: 0.4px solid #fff2e7;
@@ -113,4 +135,29 @@ footer img{
     height: 49px;
     display: block;
     margin: 0 auto;
+}
+@media(max-width:666px){
+    .cabeca{
+        flex-direction: column;
+        gap: 30px;
+    }
+    .conteudoSec{
+      text-align: center;
+        
+    }
+}
+@media(max-width:590px){
+    .cabeca nav{
+        flex-direction: column;
+    }
+    .conteudoPri{
+        flex-direction: column;
+        text-align: center;
+    }
+    .conteudoPri button{
+        margin: 0 auto;
+    }
+    .conteudoSec p{
+        text-align: center;
+    }
 }
